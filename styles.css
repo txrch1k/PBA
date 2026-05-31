@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #ff5722;
+}
+
+.navbar .logo {
+    font-weight: bold;
+    color: #ff5722;
+    font-size: 1.5rem;
+}
+
+.nav-links a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin-left: 1.5rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #ff5722;
+}
+
+.container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dash-header {
+    margin-bottom: 2rem;
+}
+
+.leaders-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.leader-card {
+    background-color: #1e1e1e;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-top: 4px solid #ff5722;
+}
+
+.leader-card h3 {
+    margin-bottom: 1rem;
+    color: #ff5722;
+}
+
+.leader-card ol {
+    padding-left: 1.5rem;
+}
+
+.leader-card li {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.upload-section {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.upload-box {
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.primary-btn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.primary-btn:hover {
+    background-color: #e64a19;
+}
+
+.player-directory {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.player-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.player-table th, .player-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #333;
+}
+
+.player-table th {
+    color: #ff5722;
+}

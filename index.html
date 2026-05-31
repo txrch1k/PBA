@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PBA Basketball League | Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">PBA League</div>
+        <div class="nav-links">
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Teams</a>
+            <a href="#">Stats</a>
+            <a href="#">Leaders</a>
+            <a href="#">Admin (Upload)</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <!-- Dashboard Header -->
+        <header class="dash-header">
+            <h1>League Leaders</h1>
+            <p>Welcome to the official home of the PBA. Data updates automatically upon image upload!</p>
+        </header>
+
+        <!-- Leaders Section -->
+        <section class="leaders-section">
+            <div class="leader-card">
+                <h3>Points Per Game (PPG)</h3>
+                <ol id="ppg-leaders">
+                    <!-- Populated via JS -->
+                </ol>
+            </div>
+            <div class="leader-card">
+                <h3>Assists Per Game (APG)</h3>
+                <ol id="apg-leaders">
+                    <!-- Populated via JS -->
+                </ol>
+            </div>
+            <div class="leader-card">
+                <h3>Rebounds Per Game (RPG)</h3>
+                <ol id="rpg-leaders">
+                    <!-- Populated via JS -->
+                </ol>
+            </div>
+        </section>
+
+        <!-- UPLOAD SECTION -->
+        <section class="upload-section">
+            <h2>Upload Stat Sheet (OCR)</h2>
+            <p>Upload a scorecard image (e.g., box score or stat sheet). Our system simulates OCR processing and adds to each player's existing totals!</p>
+            <div class="upload-box">
+                <input type="file" id="stat-image" accept="image/*">
+                <button id="upload-btn" class="primary-btn">Process & Add Stats</button>
+            </div>
+            <p id="upload-status"></p>
+        </section>
+
+        <!-- Player Directory -->
+        <section class="player-directory">
+            <h2>Player Roster & Season Totals</h2>
+            <table class="player-table">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Team</th>
+                        <th>GP</th>
+                        <th>PTS</th>
+                        <th>REB</th>
+                        <th>AST</th>
+                        <th>PPG</th>
+                    </tr>
+                </thead>
+                <tbody id="player-table-body">
+                    <!-- Populated via JS -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
